@@ -26,7 +26,6 @@ import org.gradle.api.specs.Spec;
 import org.gradle.api.tasks.Internal;
 import org.gradle.internal.Factory;
 import org.gradle.logging.StandardOutputCapture;
-import org.gradle.util.Configurable;
 import org.gradle.util.Path;
 
 import java.io.File;

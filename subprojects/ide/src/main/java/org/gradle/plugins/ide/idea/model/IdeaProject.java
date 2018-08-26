@@ -37,7 +37,7 @@ import java.io.File;
 import java.util.List;
 import java.util.Set;
 
-import static org.gradle.util.ConfigureUtil.configure;
+import static org.gradle.api.internal.ConfigureUtil.configure;
 
 /**
  * Enables fine-tuning project details (*.ipr file) of the IDEA plugin.

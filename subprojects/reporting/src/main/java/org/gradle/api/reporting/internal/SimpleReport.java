@@ -18,6 +18,7 @@ package org.gradle.api.reporting.internal;
 
 import groovy.lang.Closure;
 import org.gradle.api.Project;
+import org.gradle.api.internal.ConfigureUtil;
 import org.gradle.api.provider.Property;
 import org.gradle.api.provider.Provider;
 import org.gradle.api.reporting.ConfigurableReport;
@@ -25,7 +26,6 @@ import org.gradle.api.reporting.Report;
 import org.gradle.internal.Factories;
 import org.gradle.internal.Factory;
 import org.gradle.internal.file.PathToFileResolver;
-import org.gradle.util.ConfigureUtil;
 import org.gradle.util.DeprecationLogger;
 
 import java.io.File;

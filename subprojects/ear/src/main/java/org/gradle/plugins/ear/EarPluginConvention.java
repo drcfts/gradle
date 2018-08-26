@@ -17,13 +17,13 @@ package org.gradle.plugins.ear;
 
 import groovy.lang.Closure;
 import org.gradle.api.Action;
+import org.gradle.api.internal.ConfigureUtil;
 import org.gradle.api.internal.file.FileResolver;
 import org.gradle.api.internal.model.InstantiatorBackedObjectFactory;
 import org.gradle.api.model.ObjectFactory;
 import org.gradle.internal.reflect.Instantiator;
 import org.gradle.plugins.ear.descriptor.DeploymentDescriptor;
 import org.gradle.plugins.ear.descriptor.internal.DefaultDeploymentDescriptor;
-import org.gradle.util.ConfigureUtil;
 import org.gradle.util.DeprecationLogger;
 
 import javax.inject.Inject;

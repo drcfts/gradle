@@ -22,9 +22,9 @@ import org.gradle.api.artifacts.Configuration;
 import org.gradle.api.artifacts.ConfigurationContainer;
 import org.gradle.api.artifacts.DependencyConstraint;
 import org.gradle.api.artifacts.dsl.DependencyConstraintHandler;
+import org.gradle.api.internal.ConfigureUtil;
 import org.gradle.internal.metaobject.MethodAccess;
 import org.gradle.internal.metaobject.MethodMixIn;
-import org.gradle.util.ConfigureUtil;
 
 import javax.annotation.Nullable;
 

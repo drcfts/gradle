@@ -28,7 +28,6 @@ import org.gradle.internal.Actions;
 import org.gradle.internal.Cast;
 import org.gradle.internal.metaobject.ConfigureDelegate;
 import org.gradle.internal.reflect.Instantiator;
-import org.gradle.util.ConfigureUtil;
 
 import javax.annotation.Nullable;
 

@@ -26,6 +26,7 @@ import org.gradle.api.file.CopySpec;
 import org.gradle.api.file.DeleteSpec;
 import org.gradle.api.file.FileTree;
 import org.gradle.api.initialization.dsl.ScriptHandler;
+import org.gradle.api.internal.ConfigureUtil;
 import org.gradle.api.internal.ProcessOperations;
 import org.gradle.api.internal.file.DefaultFileOperations;
 import org.gradle.api.internal.file.FileLookup;
@@ -54,7 +55,6 @@ import org.gradle.process.ExecResult;
 import org.gradle.process.ExecSpec;
 import org.gradle.process.JavaExecSpec;
 import org.gradle.process.internal.ExecFactory;
-import org.gradle.util.ConfigureUtil;
 
 import java.io.File;
 import java.net.URI;

@@ -17,7 +17,6 @@
 package org.gradle.api.internal;
 
 import org.gradle.api.Action;
-import org.gradle.util.ConfigureUtil;
 
 import java.util.Collection;
 import java.util.Collections;

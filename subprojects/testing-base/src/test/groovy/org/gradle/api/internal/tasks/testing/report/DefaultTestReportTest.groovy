@@ -15,6 +15,7 @@
  */
 package org.gradle.api.internal.tasks.testing.report
 
+import org.gradle.api.internal.ConfigureUtil
 import org.gradle.api.internal.tasks.testing.BuildableTestResultsProvider
 import org.gradle.api.internal.tasks.testing.junit.result.AggregateTestResultsProvider
 import org.gradle.api.internal.tasks.testing.junit.result.TestResultsProvider
@@ -32,7 +33,6 @@ import org.gradle.internal.work.WorkerLeaseService
 import org.gradle.test.fixtures.file.TestFile
 import org.gradle.test.fixtures.file.TestNameTestDirectoryProvider
 import org.gradle.test.fixtures.work.TestWorkerLeaseService
-import org.gradle.util.ConfigureUtil
 import org.junit.Rule
 import spock.lang.Specification
 import spock.lang.Unroll

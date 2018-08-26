@@ -16,11 +16,10 @@
 package org.gradle.api.artifacts;
 
 import groovy.lang.Closure;
-
 import org.gradle.api.Action;
 import org.gradle.api.NamedDomainObjectList;
 import org.gradle.api.artifacts.repositories.ArtifactRepository;
-import org.gradle.util.Configurable;
+import org.gradle.api.internal.Configurable;
 
 /**
  * <p>A {@code ResolverContainer} is responsible for managing a set of {@link ArtifactRepository} instances. Repositories are arranged in a sequence.</p>

@@ -34,7 +34,7 @@ import org.gradle.util.DeprecationLogger;
 
 import java.io.File;
 
-import static org.gradle.util.ConfigureUtil.configure;
+import static org.gradle.api.internal.ConfigureUtil.configure;
 
 /**
  * Is mixed into the project when applying the {@link org.gradle.api.plugins.JavaBasePlugin} or the

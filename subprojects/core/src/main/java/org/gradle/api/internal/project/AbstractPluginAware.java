@@ -18,12 +18,12 @@ package org.gradle.api.internal.project;
 
 import groovy.lang.Closure;
 import org.gradle.api.Action;
+import org.gradle.api.internal.ConfigureUtil;
 import org.gradle.api.internal.plugins.DefaultObjectConfigurationAction;
 import org.gradle.api.internal.plugins.PluginAwareInternal;
 import org.gradle.api.plugins.ObjectConfigurationAction;
 import org.gradle.api.plugins.PluginContainer;
 import org.gradle.configuration.ConfigurationTargetIdentifier;
-import org.gradle.util.ConfigureUtil;
 
 import javax.inject.Inject;
 import java.util.Map;

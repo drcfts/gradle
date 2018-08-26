@@ -16,7 +16,6 @@
 
 package org.gradle.api.internal
 
-import org.gradle.util.ConfigureUtil
 import spock.lang.Specification
 
 class ConfigureByMapActionTest extends Specification {
@@ -105,11 +104,10 @@ class ConfigureByMapActionTest extends Specification {
         action(p1: "v1", ["a"]) != action(p1: "v1")
     }
 
-}
-
-class Bean {
-    String prop
-    def method(String value) {
-        prop = value
+    static class Bean {
+        String prop
+        def method(String value) {
+            prop = value
+        }
     }
 }

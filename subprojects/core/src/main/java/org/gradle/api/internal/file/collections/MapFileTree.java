@@ -22,13 +22,13 @@ import org.gradle.api.Transformer;
 import org.gradle.api.file.FileVisitDetails;
 import org.gradle.api.file.FileVisitor;
 import org.gradle.api.file.RelativePath;
+import org.gradle.api.internal.ConfigureUtil;
 import org.gradle.api.internal.file.AbstractFileTreeElement;
 import org.gradle.api.internal.file.FileSystemSubset;
 import org.gradle.internal.Factory;
 import org.gradle.internal.io.StreamByteBuffer;
 import org.gradle.internal.nativeintegration.filesystem.Chmod;
 import org.gradle.util.CollectionUtils;
-import org.gradle.util.ConfigureUtil;
 
 import java.io.File;
 import java.io.IOException;

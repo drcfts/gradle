@@ -21,11 +21,11 @@ import org.apache.commons.io.FileUtils;
 import org.gradle.api.Action;
 import org.gradle.api.InvalidUserDataException;
 import org.gradle.api.UncheckedIOException;
+import org.gradle.api.internal.ConfigureUtil;
 import org.gradle.api.java.archives.Attributes;
 import org.gradle.api.java.archives.ManifestMergeSpec;
 import org.gradle.internal.IoActions;
 import org.gradle.internal.file.PathToFileResolver;
-import org.gradle.util.ConfigureUtil;
 
 import java.io.ByteArrayInputStream;
 import java.io.ByteArrayOutputStream;

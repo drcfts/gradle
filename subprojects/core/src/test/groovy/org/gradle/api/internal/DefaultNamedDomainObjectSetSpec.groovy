@@ -19,7 +19,6 @@ package org.gradle.api.internal
 import org.gradle.api.Namer
 import org.gradle.internal.reflect.DirectInstantiator
 import org.gradle.internal.reflect.Instantiator
-import org.gradle.util.ConfigureUtil
 
 class DefaultNamedDomainObjectSetSpec extends AbstractNamedDomainObjectCollectionSpec<Bean> {
     private final Instantiator instantiator = new ClassGeneratorBackedInstantiator(new AsmBackedClassGenerator(), DirectInstantiator.INSTANCE)

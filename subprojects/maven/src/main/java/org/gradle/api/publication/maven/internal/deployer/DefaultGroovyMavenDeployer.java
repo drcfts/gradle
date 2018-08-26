@@ -21,11 +21,11 @@ import org.apache.maven.artifact.ant.RemoteRepository;
 import org.gradle.api.artifacts.maven.GroovyMavenDeployer;
 import org.gradle.api.artifacts.maven.PomFilterContainer;
 import org.gradle.api.internal.ClosureBackedAction;
+import org.gradle.api.internal.ConfigureUtil;
 import org.gradle.api.internal.artifacts.mvnsettings.LocalMavenRepositoryLocator;
 import org.gradle.api.internal.artifacts.mvnsettings.MavenSettingsProvider;
 import org.gradle.api.publication.maven.internal.ArtifactPomContainer;
 import org.gradle.internal.logging.LoggingManagerInternal;
-import org.gradle.util.ConfigureUtil;
 
 import java.util.Map;
 

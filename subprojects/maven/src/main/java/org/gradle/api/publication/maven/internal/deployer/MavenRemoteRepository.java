@@ -20,7 +20,7 @@ import org.apache.maven.artifact.ant.Authentication;
 import org.apache.maven.artifact.ant.Proxy;
 import org.apache.maven.artifact.ant.RemoteRepository;
 import org.apache.maven.artifact.ant.RepositoryPolicy;
-import org.gradle.util.ConfigureUtil;
+import org.gradle.api.internal.ConfigureUtil;
 
 import java.util.Map;
 

@@ -15,7 +15,7 @@
  */
 package org.gradle.api.internal.project
 
-import org.gradle.util.ConfigureUtil
+import org.gradle.api.internal.ConfigureUtil
 import spock.lang.Specification
 
 class ProjectStateInternalSpec extends Specification {

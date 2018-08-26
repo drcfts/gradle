@@ -16,11 +16,11 @@
 package org.gradle.internal.typeconversion;
 
 import org.gradle.api.InvalidUserDataException;
+import org.gradle.api.internal.ConfigureUtil;
 import org.gradle.api.tasks.Optional;
 import org.gradle.internal.UncheckedException;
 import org.gradle.internal.exceptions.DiagnosticsVisitor;
 import org.gradle.internal.reflect.ReflectionCache;
-import org.gradle.util.ConfigureUtil;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.InvocationTargetException;

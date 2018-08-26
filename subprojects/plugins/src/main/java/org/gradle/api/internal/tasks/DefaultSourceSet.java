@@ -29,7 +29,7 @@ import org.gradle.api.tasks.SourceSet;
 import org.gradle.api.tasks.SourceSetOutput;
 import org.gradle.util.GUtil;
 
-import static org.gradle.util.ConfigureUtil.configure;
+import static org.gradle.api.internal.ConfigureUtil.configure;
 
 public class DefaultSourceSet implements SourceSet {
     private final String name;

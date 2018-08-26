@@ -18,11 +18,11 @@ package org.gradle.api.plugins.antlr.internal;
 import groovy.lang.Closure;
 import org.gradle.api.Action;
 import org.gradle.api.file.SourceDirectorySet;
+import org.gradle.api.internal.ConfigureUtil;
 import org.gradle.api.model.ObjectFactory;
 import org.gradle.api.plugins.antlr.AntlrSourceVirtualDirectory;
 import org.gradle.api.reflect.HasPublicType;
 import org.gradle.api.reflect.TypeOf;
-import org.gradle.util.ConfigureUtil;
 
 import static org.gradle.api.reflect.TypeOf.typeOf;
 

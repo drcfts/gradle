@@ -15,9 +15,9 @@
  */
 package org.gradle.launcher.daemon.context
 
+import org.gradle.api.internal.ConfigureUtil
 import org.gradle.internal.nativeintegration.ProcessEnvironment
 import org.gradle.test.fixtures.file.TestNameTestDirectoryProvider
-import org.gradle.util.ConfigureUtil
 import org.gradle.util.Requires
 import org.gradle.util.TestPrecondition
 import org.junit.Rule

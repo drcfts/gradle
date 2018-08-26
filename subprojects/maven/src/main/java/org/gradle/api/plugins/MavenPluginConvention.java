@@ -21,10 +21,10 @@ import org.gradle.api.artifacts.Configuration;
 import org.gradle.api.artifacts.maven.Conf2ScopeMapping;
 import org.gradle.api.artifacts.maven.Conf2ScopeMappingContainer;
 import org.gradle.api.artifacts.maven.MavenPom;
+import org.gradle.api.internal.ConfigureUtil;
 import org.gradle.api.internal.project.ProjectInternal;
 import org.gradle.api.publication.maven.internal.MavenFactory;
 import org.gradle.api.publication.maven.internal.MavenPomMetaInfoProvider;
-import org.gradle.util.ConfigureUtil;
 
 import java.io.File;
 import java.util.Collections;

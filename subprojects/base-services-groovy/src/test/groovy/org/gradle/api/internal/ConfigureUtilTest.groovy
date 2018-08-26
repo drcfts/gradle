@@ -13,10 +13,9 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package org.gradle.util
+package org.gradle.api.internal
 
-import org.gradle.api.internal.ThreadGlobalInstantiator
-import org.gradle.util.ConfigureUtil.IncompleteInputException
+import org.gradle.api.internal.ConfigureUtil.IncompleteInputException
 import spock.lang.Specification
 
 import static org.hamcrest.Matchers.equalTo
@@ -60,10 +59,10 @@ class ConfigureUtilTest extends Specification {
         def cl = {
             it.is obj
         }
-        def cl2 = {List list ->
+        def cl2 = { List list ->
             list.is obj
         }
-        def cl3 = {->
+        def cl3 = { ->
             delegate.is obj
         }
 
@@ -190,11 +189,11 @@ class ConfigureUtilTest extends Specification {
         bean.prop == "foo"
     }
 
-}
+    static class Bean {
+        String prop
 
-class Bean {
-    String prop
-    def method(String value) {
-        prop = value
+        def method(String value) {
+            prop = value
+        }
     }
 }

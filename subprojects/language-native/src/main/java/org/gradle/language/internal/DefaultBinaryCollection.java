@@ -20,13 +20,13 @@ import com.google.common.collect.ImmutableSet;
 import groovy.lang.Closure;
 import org.gradle.api.Action;
 import org.gradle.api.component.SoftwareComponent;
+import org.gradle.api.internal.ConfigureUtil;
 import org.gradle.api.internal.provider.AbstractProvider;
 import org.gradle.api.provider.ProviderFactory;
 import org.gradle.api.specs.Spec;
 import org.gradle.internal.ImmutableActionSet;
 import org.gradle.language.BinaryCollection;
 import org.gradle.language.BinaryProvider;
-import org.gradle.util.ConfigureUtil;
 
 import javax.annotation.Nullable;
 import javax.inject.Inject;

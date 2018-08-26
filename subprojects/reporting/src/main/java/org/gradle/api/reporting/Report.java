@@ -17,9 +17,9 @@
 package org.gradle.api.reporting;
 
 import org.gradle.api.Namer;
+import org.gradle.api.internal.Configurable;
 import org.gradle.api.tasks.Input;
 import org.gradle.api.tasks.Internal;
-import org.gradle.util.Configurable;
 
 import java.io.File;
 import java.io.Serializable;

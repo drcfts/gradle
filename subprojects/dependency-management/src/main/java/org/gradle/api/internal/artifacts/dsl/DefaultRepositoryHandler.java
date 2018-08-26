@@ -23,10 +23,10 @@ import org.gradle.api.artifacts.repositories.FlatDirectoryArtifactRepository;
 import org.gradle.api.artifacts.repositories.IvyArtifactRepository;
 import org.gradle.api.artifacts.repositories.MavenArtifactRepository;
 import org.gradle.api.internal.ConfigureByMapAction;
+import org.gradle.api.internal.ConfigureUtil;
 import org.gradle.api.internal.artifacts.BaseRepositoryFactory;
 import org.gradle.api.internal.artifacts.DefaultArtifactRepositoryContainer;
 import org.gradle.internal.reflect.Instantiator;
-import org.gradle.util.ConfigureUtil;
 
 import java.util.HashMap;
 import java.util.Map;

@@ -19,10 +19,10 @@ import org.gradle.api.artifacts.Configuration
 import org.gradle.api.artifacts.ConfigurationContainer
 import org.gradle.api.artifacts.dsl.DependencyHandler
 import org.gradle.api.artifacts.dsl.RepositoryHandler
+import org.gradle.api.internal.ConfigureUtil
 import org.gradle.api.internal.artifacts.DependencyResolutionServices
 import org.gradle.groovy.scripts.ScriptSource
 import org.gradle.internal.classpath.ClassPath
-import org.gradle.util.ConfigureUtil
 import spock.lang.Specification
 
 class DefaultScriptHandlerTest extends Specification {

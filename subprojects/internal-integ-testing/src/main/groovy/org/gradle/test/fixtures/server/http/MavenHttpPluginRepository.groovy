@@ -16,10 +16,10 @@
 package org.gradle.test.fixtures.server.http
 
 import org.gradle.api.Action
+import org.gradle.api.internal.ConfigureUtil
 import org.gradle.api.internal.artifacts.BaseRepositoryFactory
 import org.gradle.integtests.fixtures.executer.GradleExecuter
 import org.gradle.test.fixtures.maven.MavenFileRepository
-import org.gradle.util.ConfigureUtil
 import org.junit.rules.TestRule
 import org.junit.runner.Description
 import org.junit.runners.model.Statement

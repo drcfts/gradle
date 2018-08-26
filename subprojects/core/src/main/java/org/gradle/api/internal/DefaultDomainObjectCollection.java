@@ -33,7 +33,6 @@ import org.gradle.api.specs.Specs;
 import org.gradle.internal.Actions;
 import org.gradle.internal.Cast;
 import org.gradle.internal.ImmutableActionSet;
-import org.gradle.util.ConfigureUtil;
 
 import java.util.AbstractCollection;
 import java.util.ArrayList;

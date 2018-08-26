@@ -16,11 +16,11 @@
 
 package org.gradle.api.plugins.buildcomparison.fixtures
 
+import org.gradle.api.internal.ConfigureUtil
 import org.gradle.tooling.model.DomainObjectSet
+import org.gradle.tooling.model.internal.outcomes.GradleBuildOutcome
 import org.gradle.tooling.model.internal.outcomes.GradleFileBuildOutcome
 import org.gradle.tooling.model.internal.outcomes.ProjectOutcomes
-import org.gradle.util.ConfigureUtil
-import org.gradle.tooling.model.internal.outcomes.GradleBuildOutcome
 
 class MutableProjectOutcomes implements ProjectOutcomes {
     String name

@@ -19,7 +19,7 @@ package org.gradle.api.plugins.buildcomparison.outcome.internal.archive.entry;
 import com.google.common.base.Joiner;
 import com.google.common.collect.ImmutableList;
 import com.google.common.collect.ImmutableSet;
-import org.gradle.util.ConfigureUtil;
+import org.gradle.api.internal.ConfigureUtil;
 
 import java.util.Collection;
 import java.util.List;

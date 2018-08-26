@@ -21,9 +21,9 @@ import org.gradle.api.Incubating;
 import org.gradle.api.NamedDomainObjectSet;
 import org.gradle.api.Namer;
 import org.gradle.api.Rule;
+import org.gradle.api.internal.Configurable;
 import org.gradle.api.tasks.Internal;
 import org.gradle.api.tasks.Nested;
-import org.gradle.util.Configurable;
 
 import java.util.List;
 import java.util.Map;

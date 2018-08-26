@@ -20,8 +20,8 @@ import groovy.lang.Closure;
 import org.gradle.api.Action;
 import org.gradle.api.Incubating;
 import org.gradle.api.JavaVersion;
+import org.gradle.api.internal.ConfigureUtil;
 import org.gradle.plugins.ide.api.PropertiesFileContentMerger;
-import org.gradle.util.ConfigureUtil;
 
 import javax.inject.Inject;
 

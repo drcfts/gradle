@@ -24,7 +24,6 @@ import org.gradle.internal.BiAction
 import org.gradle.internal.reflect.DirectInstantiator
 import org.gradle.internal.service.ServiceRegistry
 import org.gradle.internal.util.BiFunction
-import org.gradle.util.ConfigureUtil
 import spock.lang.Issue
 import spock.lang.Specification
 

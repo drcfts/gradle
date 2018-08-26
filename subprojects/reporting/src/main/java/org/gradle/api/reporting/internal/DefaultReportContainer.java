@@ -20,12 +20,12 @@ import groovy.lang.Closure;
 import org.gradle.api.Action;
 import org.gradle.api.InvalidUserDataException;
 import org.gradle.api.NamedDomainObjectSet;
+import org.gradle.api.internal.ConfigureUtil;
 import org.gradle.api.internal.DefaultNamedDomainObjectSet;
 import org.gradle.api.reporting.Report;
 import org.gradle.api.reporting.ReportContainer;
 import org.gradle.api.specs.Spec;
 import org.gradle.internal.reflect.Instantiator;
-import org.gradle.util.ConfigureUtil;
 
 import javax.annotation.Nullable;
 import java.util.Map;

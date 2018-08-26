@@ -22,7 +22,6 @@ import org.gradle.api.DomainObjectSet;
 import org.gradle.api.provider.Provider;
 import org.gradle.api.specs.Spec;
 import org.gradle.api.specs.Specs;
-import org.gradle.util.ConfigureUtil;
 
 import java.util.Collection;
 import java.util.Iterator;

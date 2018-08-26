@@ -18,10 +18,10 @@ package org.gradle.jvm.internal;
 
 import groovy.lang.Closure;
 import org.gradle.api.InvalidUserDataException;
+import org.gradle.api.internal.ConfigureUtil;
 import org.gradle.jvm.JvmApiSpec;
 import org.gradle.platform.base.DependencySpecContainer;
 import org.gradle.platform.base.internal.DefaultDependencySpecContainer;
-import org.gradle.util.ConfigureUtil;
 
 import java.util.HashSet;
 import java.util.Set;

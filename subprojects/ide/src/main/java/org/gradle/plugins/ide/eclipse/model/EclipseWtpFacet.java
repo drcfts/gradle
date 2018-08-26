@@ -19,15 +19,15 @@ import com.google.common.collect.Iterables;
 import com.google.common.collect.Lists;
 import groovy.lang.Closure;
 import org.gradle.api.Action;
+import org.gradle.api.internal.ConfigureUtil;
 import org.gradle.plugins.ide.api.XmlFileContentMerger;
-import org.gradle.util.ConfigureUtil;
 
 import javax.inject.Inject;
 import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
-import static org.gradle.util.ConfigureUtil.configure;
+import static org.gradle.api.internal.ConfigureUtil.configure;
 
 /**
  * Enables fine-tuning wtp facet details of the Eclipse plugin

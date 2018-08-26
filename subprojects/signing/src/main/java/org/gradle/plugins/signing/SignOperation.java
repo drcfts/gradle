@@ -19,10 +19,10 @@ import com.google.common.base.Function;
 import groovy.lang.Closure;
 import org.gradle.api.artifacts.PublishArtifact;
 import org.gradle.api.file.FileCollection;
+import org.gradle.api.internal.ConfigureUtil;
 import org.gradle.api.internal.file.collections.ImmutableFileCollection;
 import org.gradle.plugins.signing.signatory.Signatory;
 import org.gradle.plugins.signing.type.SignatureType;
-import org.gradle.util.ConfigureUtil;
 
 import java.io.File;
 import java.util.ArrayList;

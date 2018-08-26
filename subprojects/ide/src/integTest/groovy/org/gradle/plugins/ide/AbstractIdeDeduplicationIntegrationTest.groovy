@@ -16,8 +16,8 @@
 
 package org.gradle.plugins.ide
 
+import org.gradle.api.internal.ConfigureUtil
 import org.gradle.test.fixtures.file.TestFile
-import org.gradle.util.ConfigureUtil
 
 abstract class AbstractIdeDeduplicationIntegrationTest extends AbstractIdeIntegrationSpec {
     protected abstract String projectName(String path)

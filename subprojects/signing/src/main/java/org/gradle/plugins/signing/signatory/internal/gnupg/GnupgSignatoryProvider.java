@@ -18,9 +18,9 @@ package org.gradle.plugins.signing.signatory.internal.gnupg;
 import groovy.lang.Closure;
 import org.gradle.api.Incubating;
 import org.gradle.api.Project;
+import org.gradle.api.internal.ConfigureUtil;
 import org.gradle.plugins.signing.SigningExtension;
 import org.gradle.plugins.signing.signatory.SignatoryProvider;
-import org.gradle.util.ConfigureUtil;
 
 import java.util.LinkedHashMap;
 import java.util.Map;

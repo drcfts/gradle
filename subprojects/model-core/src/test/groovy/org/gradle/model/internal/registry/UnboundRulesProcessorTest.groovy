@@ -17,13 +17,13 @@
 package org.gradle.model.internal.registry
 
 import org.gradle.api.Transformer
+import org.gradle.api.internal.ConfigureUtil
 import org.gradle.internal.Transformers
 import org.gradle.model.internal.core.ModelPath
 import org.gradle.model.internal.core.ModelReference
 import org.gradle.model.internal.report.unbound.UnboundRule
 import org.gradle.model.internal.report.unbound.UnboundRuleInput
 import org.gradle.model.internal.report.unbound.UnboundRulesReporter
-import org.gradle.util.ConfigureUtil
 
 import static org.gradle.util.TextUtil.normaliseLineSeparators
 

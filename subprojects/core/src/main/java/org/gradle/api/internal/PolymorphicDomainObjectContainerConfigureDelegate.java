@@ -19,7 +19,6 @@ import groovy.lang.Closure;
 import org.gradle.api.PolymorphicDomainObjectContainer;
 import org.gradle.internal.metaobject.ConfigureDelegate;
 import org.gradle.internal.metaobject.DynamicInvokeResult;
-import org.gradle.util.ConfigureUtil;
 
 public class PolymorphicDomainObjectContainerConfigureDelegate extends ConfigureDelegate {
     private final PolymorphicDomainObjectContainer _container;

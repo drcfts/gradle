@@ -28,12 +28,12 @@ import org.gradle.api.XmlProvider;
 import org.gradle.api.artifacts.ConfigurationContainer;
 import org.gradle.api.artifacts.maven.Conf2ScopeMappingContainer;
 import org.gradle.api.artifacts.maven.MavenPom;
+import org.gradle.api.internal.ConfigureUtil;
 import org.gradle.internal.ErroringAction;
 import org.gradle.internal.IoActions;
+import org.gradle.internal.MutableActionSet;
 import org.gradle.internal.file.PathToFileResolver;
 import org.gradle.internal.xml.XmlTransformer;
-import org.gradle.internal.MutableActionSet;
-import org.gradle.util.ConfigureUtil;
 
 import java.io.BufferedWriter;
 import java.io.IOException;

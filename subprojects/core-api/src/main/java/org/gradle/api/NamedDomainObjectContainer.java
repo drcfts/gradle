@@ -16,8 +16,8 @@
 package org.gradle.api;
 
 import groovy.lang.Closure;
+import org.gradle.api.internal.Configurable;
 import org.gradle.api.provider.Provider;
-import org.gradle.util.Configurable;
 
 /**
  * <p>A named domain object container is a specialisation of {@link NamedDomainObjectSet} that adds the ability to create

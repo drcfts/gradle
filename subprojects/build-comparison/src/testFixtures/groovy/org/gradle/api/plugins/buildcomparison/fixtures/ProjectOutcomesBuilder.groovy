@@ -16,7 +16,7 @@
 
 package org.gradle.api.plugins.buildcomparison.fixtures
 
-import org.gradle.util.ConfigureUtil
+import org.gradle.api.internal.ConfigureUtil
 
 class ProjectOutcomesBuilder {
 

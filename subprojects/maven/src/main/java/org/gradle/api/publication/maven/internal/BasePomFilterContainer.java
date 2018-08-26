@@ -22,8 +22,8 @@ import org.gradle.api.InvalidUserDataException;
 import org.gradle.api.artifacts.maven.MavenPom;
 import org.gradle.api.artifacts.maven.PomFilterContainer;
 import org.gradle.api.artifacts.maven.PublishFilter;
+import org.gradle.api.internal.ConfigureUtil;
 import org.gradle.internal.Factory;
-import org.gradle.util.ConfigureUtil;
 import org.gradle.util.WrapUtil;
 
 import java.util.HashMap;

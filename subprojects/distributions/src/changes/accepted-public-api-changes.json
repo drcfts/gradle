@@ -21,6 +21,38 @@
                 "org.gradle.api.internal.AbstractTask.getValidators()",
                 "org.gradle.api.internal.AbstractTask.setExecuter(org.gradle.api.internal.tasks.TaskExecuter)"
             ]
+        },
+        {
+            "type": "org.gradle.api.artifacts.ArtifactRepositoryContainer",
+            "member": "Class org.gradle.api.artifacts.ArtifactRepositoryContainer",
+            "acceptation": "Moved Configurable internal interface",
+            "changes": [
+                "org.gradle.api.internal.Configurable"
+            ]
+        },
+        {
+            "type": "org.gradle.api.NamedDomainObjectContainer",
+            "member": "Class org.gradle.api.NamedDomainObjectContainer",
+            "acceptation": "Moved Configurable internal interface",
+            "changes": [
+                "org.gradle.api.internal.Configurable"
+            ]
+        },
+        {
+            "type": "org.gradle.api.reporting.Report",
+            "member": "Class org.gradle.api.reporting.Report",
+            "acceptation": "Moved Configurable internal interface",
+            "changes": [
+                "org.gradle.api.internal.Configurable"
+            ]
+        },
+        {
+            "type": "org.gradle.api.reporting.ReportContainer",
+            "member": "Class org.gradle.api.reporting.ReportContainer",
+            "acceptation": "Moved Configurable internal interface",
+            "changes": [
+                "org.gradle.api.internal.Configurable"
+            ]
         }
     ]
 }

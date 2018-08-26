@@ -23,8 +23,8 @@ import org.gradle.api.reflect.HasPublicType;
 import org.gradle.api.reflect.TypeOf;
 import org.gradle.api.tasks.ScalaSourceSet;
 
+import static org.gradle.api.internal.ConfigureUtil.configure;
 import static org.gradle.api.reflect.TypeOf.typeOf;
-import static org.gradle.util.ConfigureUtil.configure;
 
 public class DefaultScalaSourceSet implements ScalaSourceSet, HasPublicType {
     private final SourceDirectorySet scala;

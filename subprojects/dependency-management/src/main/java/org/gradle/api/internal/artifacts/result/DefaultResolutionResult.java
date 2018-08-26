@@ -22,9 +22,9 @@ import org.gradle.api.artifacts.result.DependencyResult;
 import org.gradle.api.artifacts.result.ResolutionResult;
 import org.gradle.api.artifacts.result.ResolvedComponentResult;
 import org.gradle.api.artifacts.result.ResolvedDependencyResult;
+import org.gradle.api.internal.ConfigureUtil;
 import org.gradle.internal.Actions;
 import org.gradle.internal.Factory;
-import org.gradle.util.ConfigureUtil;
 
 import java.util.HashSet;
 import java.util.LinkedHashSet;
