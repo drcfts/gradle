@@ -25,18 +25,18 @@ import org.gradle.api.tasks.FileNormalizer;
 public class NonCacheableTaskOutputPropertySpec implements TaskOutputFilePropertySpec {
 
     private final CompositeTaskOutputPropertySpec parent;
-    private final int index;
+    private final String propertySuffix;
     private final FileCollection files;
 
-    public NonCacheableTaskOutputPropertySpec(String taskName, CompositeTaskOutputPropertySpec parent, int index, FileResolver resolver, Object paths) {
+    public NonCacheableTaskOutputPropertySpec(String taskName, CompositeTaskOutputPropertySpec parent, String propertySuffix, FileResolver resolver, Object paths) {
         this.parent = parent;
-        this.index = index;
+        this.propertySuffix = propertySuffix;
         this.files = new TaskPropertyFileCollection(taskName, "output", this, resolver, paths);
     }
 
     @Override
     public String getPropertyName() {
-        return parent.getPropertyName() + "$" + index;
+        return parent.getPropertyName() + propertySuffix;
     }
 
     public String getOriginalPropertyName() {

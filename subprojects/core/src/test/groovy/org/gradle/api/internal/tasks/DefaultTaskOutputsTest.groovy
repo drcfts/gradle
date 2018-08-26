@@ -67,12 +67,6 @@ class DefaultTaskOutputsTest extends Specification {
         getOutputFileProperties() >> ImmutableSortedSet.of(Mock(TaskOutputFilePropertySpec))
         hasDeclaredOutputs() >> true
     }
-    def taskPropertiesWithPluralOutput = Mock(TaskProperties) {
-        getOutputFileProperties() >> ImmutableSortedSet.of(Mock(NonCacheableTaskOutputPropertySpec) {
-            getOriginalPropertyName() >> "\$1"
-        })
-        hasDeclaredOutputs() >> true
-    }
     def task = Mock(TaskInternal) {
         getName() >> "task"
         toString() >> "task 'task'"
@@ -151,7 +145,7 @@ class DefaultTaskOutputsTest extends Specification {
         when: outputs.files("a", "b")
         then:
         outputs.files.files.toList() == [new File('a'), new File("b")]
-        outputs.fileProperties*.propertyName == ['$1$1']
+        outputs.fileProperties*.propertyName == ['$1$1', '$1$2']
         outputs.fileProperties*.propertyFiles*.files.flatten() == [new File("a"), new File("b")]
     }
 
@@ -159,7 +153,7 @@ class DefaultTaskOutputsTest extends Specification {
         when: outputs.files("a", "b").withPropertyName("prop")
         then:
         outputs.files.files.toList() == [new File('a'), new File("b")]
-        outputs.fileProperties*.propertyName == ['prop$1']
+        outputs.fileProperties*.propertyName == ['prop$1', 'prop$2']
         outputs.fileProperties*.propertyFiles*.files.flatten() == [new File("a"), new File("b")]
     }
 
@@ -438,17 +432,6 @@ class DefaultTaskOutputsTest extends Specification {
         cachingState.enabled
         cachingState.disabledReason == null
         cachingState.disabledReasonCategory == null
-    }
-
-    def "disabling caching for plural file outputs is reported"() {
-        when:
-        outputs.cacheIf { true }
-        def cachingState = outputs.getCachingState(taskPropertiesWithPluralOutput)
-
-        then:
-        !cachingState.enabled
-        cachingState.disabledReason == "Declares multiple output files for the single output property '\$1' via `@OutputFiles`, `@OutputDirectories` or `TaskOutputs.files()`"
-        cachingState.disabledReasonCategory == TaskOutputCachingDisabledReasonCategory.PLURAL_OUTPUTS
     }
 
     void getPreviousFilesDelegatesToTaskHistory() {

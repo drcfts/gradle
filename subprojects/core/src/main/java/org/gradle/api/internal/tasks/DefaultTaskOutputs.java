@@ -129,9 +129,9 @@ public class DefaultTaskOutputs implements TaskOutputsInternal {
             if (spec instanceof NonCacheableTaskOutputPropertySpec) {
                 return DefaultTaskOutputCachingState.disabled(
                     PLURAL_OUTPUTS,
-                    "Declares multiple output files for the single output property '"
+                    "Declares complex output for the output property '"
                         + ((NonCacheableTaskOutputPropertySpec) spec).getOriginalPropertyName()
-                        + "' via `@OutputFiles`, `@OutputDirectories` or `TaskOutputs.files()`"
+                        + "'"
                 );
             }
         }

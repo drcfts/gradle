@@ -78,7 +78,7 @@ public class CompositeTaskOutputPropertySpec extends AbstractTaskOutputPropertyS
             };
         } else {
             final List<Object> roots = Lists.newArrayList();
-            resolver.resolveFiles(paths).visitRootElements(new FileCollectionVisitor() {
+            resolver.resolveFiles(unpackedPaths).visitRootElements(new FileCollectionVisitor() {
                 @Override
                 public void visitCollection(FileCollectionInternal fileCollection) {
                     visitRoot(fileCollection);
@@ -109,7 +109,12 @@ public class CompositeTaskOutputPropertySpec extends AbstractTaskOutputPropertyS
                         return endOfData();
                     }
                     Object root = iterator.next();
-                    return new NonCacheableTaskOutputPropertySpec(taskName, CompositeTaskOutputPropertySpec.this, ++index, resolver, root);
+                    String propertySuffix = "$" + (++index);
+                    if (root instanceof File) {
+                        return new CacheableTaskOutputCompositeFilePropertyElementSpec(CompositeTaskOutputPropertySpec.this, propertySuffix, (File) root);
+                    } else {
+                        return new NonCacheableTaskOutputPropertySpec(taskName, CompositeTaskOutputPropertySpec.this, propertySuffix, resolver, root);
+                    }
                 }
             };
         }
