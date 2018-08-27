@@ -41,7 +41,7 @@ public class ModelBuilderBackedModelProducer extends HasCompatibilityMapping imp
 
     public <T> T produceModel(Class<T> type, ConsumerOperationParameters operationParameters) {
         if (!versionDetails.maySupportModel(type)) {
-            throw Exceptions.unsupportedModel(type, versionDetails.getVersion());
+            throw ModelMapping.unsupportedModel(type, versionDetails.getVersion());
         }
         final ModelIdentifier modelIdentifier = modelMapping.getModelIdentifierFromModelType(type);
         BuildResult<?> result;

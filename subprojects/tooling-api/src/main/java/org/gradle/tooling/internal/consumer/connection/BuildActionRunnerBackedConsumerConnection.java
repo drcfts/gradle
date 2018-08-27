@@ -22,7 +22,6 @@ import org.gradle.tooling.internal.consumer.versioning.ModelMapping;
 import org.gradle.tooling.internal.consumer.versioning.VersionDetails;
 import org.gradle.tooling.internal.protocol.BuildActionRunner;
 import org.gradle.tooling.internal.protocol.ConnectionVersion4;
-import org.gradle.tooling.model.internal.Exceptions;
 
 /**
  * An adapter for a {@link BuildActionRunner} based provider.
@@ -69,7 +68,7 @@ public class BuildActionRunnerBackedConsumerConnection extends AbstractPost12Con
         public <T> T produceModel(Class<T> type, ConsumerOperationParameters operationParameters) {
             if (!versionDetails.maySupportModel(type)) {
                 //don't bother asking the provider for this model
-                throw Exceptions.unsupportedModel(type, versionDetails.getVersion());
+                throw ModelMapping.unsupportedModel(type, versionDetails.getVersion());
 
             }
             Class<?> protocolType = modelMapping.getProtocolType(type);

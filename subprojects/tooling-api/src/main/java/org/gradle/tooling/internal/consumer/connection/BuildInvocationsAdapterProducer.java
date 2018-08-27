@@ -19,10 +19,10 @@ package org.gradle.tooling.internal.consumer.connection;
 import org.gradle.tooling.internal.adapter.ProtocolToModelAdapter;
 import org.gradle.tooling.internal.consumer.converters.BuildInvocationsConverter;
 import org.gradle.tooling.internal.consumer.parameters.ConsumerOperationParameters;
+import org.gradle.tooling.internal.consumer.versioning.ModelMapping;
 import org.gradle.tooling.internal.consumer.versioning.VersionDetails;
 import org.gradle.tooling.model.GradleProject;
 import org.gradle.tooling.model.gradle.BuildInvocations;
-import org.gradle.tooling.model.internal.Exceptions;
 
 public class BuildInvocationsAdapterProducer implements ModelProducer {
     private final ProtocolToModelAdapter adapter;
@@ -38,7 +38,7 @@ public class BuildInvocationsAdapterProducer implements ModelProducer {
     public <T> T produceModel(Class<T> type, ConsumerOperationParameters operationParameters) {
         if (type.equals(BuildInvocations.class)) {
             if (!versionDetails.maySupportModel(GradleProject.class)) {
-                throw Exceptions.unsupportedModel(type, versionDetails.getVersion());
+                throw ModelMapping.unsupportedModel(type, versionDetails.getVersion());
             }
             GradleProject gradleProject = delegate.produceModel(GradleProject.class, operationParameters);
             return adapter.adapt(type, new BuildInvocationsConverter().convert(gradleProject));
