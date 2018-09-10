@@ -28,6 +28,10 @@ import java.util.List;
 import java.util.Set;
 import java.util.concurrent.CopyOnWriteArrayList;
 
+import javax.annotation.Nullable;
+
+import org.gradle.internal.concurrent.CompositeStoppable;
+
 /**
  * A {@code ClassLoader} which delegates to multiple parent ClassLoaders.
  *
@@ -156,5 +160,9 @@ public class MultiParentClassLoader extends ClassLoader implements ClassLoaderHi
     @Override
     public int hashCode() {
         return parents.hashCode();
+    }
+
+    public static void tryClose(@Nullable ClassLoader classLoader) {
+        CompositeStoppable.stoppable(classLoader).stop();
     }
 }
